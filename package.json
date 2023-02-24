@@ -1,12 +1,14 @@
 {
-  "name": "clifactorialcal",
+  "name": "poj-factorial-calc",
   "version": "1.0.0",
-  "description": "factorial calculator",
-  "main": "index.js",
+  "description": "A simple utility library for factorial calculator",
+  "bin": "index.js",
   "scripts": {
     "dev": "node index.js"
   },
-  "author": "ParinchatJ",
+  "type": "module",
+  "keywords": ["factorial", "math", "calculator", "number"],
+  "author": "ParinchatJ <j.parinchat@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",

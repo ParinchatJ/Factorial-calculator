@@ -1,5 +1,7 @@
-// Factorial calculator
-const { program } = require("commander");
+#!/usr/bin/env node
+
+import { program } from 'commander';
+import chalk from 'chalk';
 
 program
   .name("factorial-cal")
@@ -17,7 +19,11 @@ program.command("fac <x>").action((x) => {
   for (let i = x; i >= 1; i--) {
     ans *= i;
   }
-  console.log(`the answer is ${ans}`);
+  console.log(
+    chalk.blue("The answer your ") + chalk.green.underline(`${x}!`) +
+    chalk.blue(" is ") +
+    chalk.yellow(chalk.bgRed.bold(` ${ans} `)));
+  //   console.log(`the answer is ${ans}`);
 });
 
 program.parse();
