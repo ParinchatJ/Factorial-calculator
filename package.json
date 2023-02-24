@@ -1,0 +1,14 @@
+{
+  "name": "clifactorialcal",
+  "version": "1.0.0",
+  "description": "factorial calculator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "ParinchatJ",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.0"
+  }
+}
